@@ -5,7 +5,7 @@ import { withBlitz } from "src/blitz-client"
 function RootErrorFallback({ error }: ErrorFallbackProps) {
   return (
     <ErrorComponent
-      statusCode={(error as any)?.statusCode || 400}
+    statusCode={(error as any)?.statusCode || 400}
     />
   )
 }
