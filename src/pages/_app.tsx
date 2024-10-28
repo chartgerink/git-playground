@@ -7,6 +7,7 @@ function RootErrorFallback({ error }: ErrorFallbackProps) {
     <ErrorComponent
       statusCode={(error as any)?.statusCode || 400}
       title={error.message || error.name}
+      testing
     />
   )
 }
